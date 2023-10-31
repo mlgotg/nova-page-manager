@@ -47,10 +47,10 @@ class PageManagerField extends Field
         $fields = new FieldCollection($this->filter($this->template->fields($request)));
         $this->fillFields($request, 'data', $fields, $model);
 
-        if ($this->meta['type'] === Template::TYPE_PAGE) {
-            $seoFields = FieldCollection::make(array_values($this->seoFields));
-            $this->fillFields($request, 'seo', $seoFields, $model);
-        }
+//        if ($this->meta['type'] === Template::TYPE_PAGE) {
+//            $seoFields = FieldCollection::make(array_values($this->seoFields));
+//            $this->fillFields($request, 'seo', $seoFields, $model);
+//        }
     }
 
     protected function fillFields($request, $attributeKey, $baseFields, $model)

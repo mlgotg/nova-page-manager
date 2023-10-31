@@ -101,13 +101,13 @@ class PageManagerController extends Controller
                 __('novaPageManager.defaultPanelName'),
             );
 
-            if ($templateType === Template::TYPE_PAGE) {
-                $seoPanelsData[$key] = $this->resolvePanelsFromFields(
-                    app()->make(NovaRequest::class),
-                    $seoFieldsData[$key] ?? [],
-                    __('novaPageManager.seoPanelName'),
-                );
-            }
+//            if ($templateType === Template::TYPE_PAGE) {
+//                $seoPanelsData[$key] = $this->resolvePanelsFromFields(
+//                    app()->make(NovaRequest::class),
+//                    $seoFieldsData[$key] ?? [],
+//                    __('novaPageManager.seoPanelName'),
+//                );
+//            }
         }
 
         // Re-map everything into format
